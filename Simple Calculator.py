@@ -1,11 +1,11 @@
 # I am gonna make a simple calculator.
 # asking the user for what operation.
-operation = input("""What operation would you like?
+print("""What operation would you like?
 +/Addition (A)
 -/Subtraction (S)
 //Division (D)
-*/Multiplication (M)
-""")
+*/Multiplication (M)""")
+operation = input("Enter your operation: ")
 # depending on the operation, the program will ask what number to add, subtract, divide, or Multiply, then print the result.
 if operation.lower() == "addition":
     num1 = float(input("What is your first number? "))
