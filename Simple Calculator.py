@@ -1,13 +1,16 @@
-# I am gonna make a simple calculator.
+# Simple Calculator
+# This program performs basic arithmetic operations: addition, subtraction, multiplication, and division.
+# The arithmetic functions are imported from a separate module named 'arithmetic.py'.
 import arithmetic
-# asking the user for what operation.
+# Display available operations
 print("""What operation would you like?
 +/Addition (A)
 -/Subtraction (S)
 //Division (D)
 */Multiplication (M)""")
+# Get user input for the desired operation
 operation = input("Enter operation: ")
-# depending on the operation, the program will ask what number to add, subtract, divide, or Multiply, then print the result.
+# Match the input to the corresponding arithmetic function
 match operation.lower():
     case "addition":
         print(arithmetic.add(float(input("Enter First Number: ")), float(input("Enter Second Number: "))))
@@ -45,7 +48,7 @@ match operation.lower():
         print(arithmetic.mul(float(input("Enter First Number: ")), float(input("Enter Second Number: "))))
     case "*":
         print(arithmetic.mul(float(input("Enter First Number: ")), float(input("Enter Second Number: "))))
-# if the user types or do something that can't be done instead of the program crashing it will just print out "Invalid operation! Please try again!" and make the user try again.
+# Handle invalid operation input by prompting the user to try again
     case _:
         print("Invalid operation! Please try again!")
         is_error = True
@@ -105,6 +108,7 @@ match operation.lower():
                 case "*":
                     print(arithmetic.mul(float(input("Enter First Number: ")), float(input("Enter Second Number: "))))
                     is_error = False
+# If the input is still invalid, continue prompting the user
                 case _:
                     print("Invalid operation! Please try again!")
                     is_error = True
