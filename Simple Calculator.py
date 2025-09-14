@@ -1,86 +1,54 @@
-# I am gonna make a simple calculator.
-# asking the user for what operation.
+# Simple Calculator
+# This program performs basic arithmetic operations: addition, subtraction, multiplication, and division.
+# The arithmetic functions are imported from a separate module named 'arithmetic.py'.
+import arithmetic
+# Display available operations
 print("""What operation would you like?
 +/Addition (A)
 -/Subtraction (S)
 //Division (D)
 */Multiplication (M)""")
+# Get user input for the desired operation
 operation = input("Enter operation: ")
-# depending on the operation, the program will ask what number to add, subtract, divide, or Multiply, then print the result.
+# Match the input to the corresponding arithmetic function
 match operation.lower():
     case "addition":
-        def add(num1, num2):
-            return num1 + num2
-        print(add(float(input("Enter First Number: ")), float(input("Enter Second Number: "))))
+        print(arithmetic.add(float(input("Enter First Number: ")), float(input("Enter Second Number: "))))
     case "add":
-        def add(num1, num2):
-            return num1 + num2
-        print(add(float(input("Enter First Number: ")), float(input("Enter Second Number: "))))
+        print(arithmetic.add(float(input("Enter First Number: ")), float(input("Enter Second Number: "))))
     case "plus":
-        def add(num1, num2):
-            return num1 + num2
-        print(add(float(input("Enter First Number: ")), float(input("Enter Second Number: "))))
+        print(arithmetic.add(float(input("Enter First Number: ")), float(input("Enter Second Number: "))))
     case "a":
-        def add(num1, num2):
-            return num1 + num2
-        print(add(float(input("Enter First Number: ")), float(input("Enter Second Number: "))))
+        print(arithmetic.add(float(input("Enter First Number: ")), float(input("Enter Second Number: "))))
     case "+":
-        def add(num1, num2):
-            return num1 + num2
-        print(add(float(input("Enter First Number: ")), float(input("Enter Second Number: "))))
+        print(arithmetic.add(float(input("Enter First Number: ")), float(input("Enter Second Number: "))))
     case "subtraction":
-        def sub(num1, num2):
-            return num1 - num2
-        print(sub(float(input("Enter First Number: ")), float(input("Enter Second Number: "))))
+        print(arithmetic.sub(float(input("Enter First Number: ")), float(input("Enter Second Number: "))))
     case "minus":
-        def sub(num1, num2):
-            return num1 - num2
-        print(sub(float(input("Enter First Number: ")), float(input("Enter Second Number: "))))
+        print(arithmetic.sub(float(input("Enter First Number: ")), float(input("Enter Second Number: "))))
     case "s":
-        def sub(num1, num2):
-            return num1 - num2
-        print(sub(float(input("Enter First Number: ")), float(input("Enter Second Number: "))))
+        print(arithmetic.sub(float(input("Enter First Number: ")), float(input("Enter Second Number: "))))
     case "-":
-        def sub(num1, num2):
-            return num1 - num2
-        print(sub(float(input("Enter First Number: ")), float(input("Enter Second Number: "))))
+        print(arithmetic.sub(float(input("Enter First Number: ")), float(input("Enter Second Number: "))))
     case "division":
-        def div(num1, num2):
-            return num1 / num2
-        print(div(float(input("Enter First Number: ")), float(input("Enter Second Number: "))))
+        print(arithmetic.div(float(input("Enter First Number: ")), float(input("Enter Second Number: "))))
     case "divide":
-        def div(num1, num2):
-            return num1 / num2
-        print(div(float(input("Enter First Number: ")), float(input("Enter Second Number: "))))
+        print(arithmetic.div(float(input("Enter First Number: ")), float(input("Enter Second Number: "))))
     case "d":
-        def div(num1, num2):
-            return num1 / num2
-        print(div(float(input("Enter First Number: ")), float(input("Enter Second Number: "))))
+        print(arithmetic.div(float(input("Enter First Number: ")), float(input("Enter Second Number: "))))
     case "/":
-        def div(num1, num2):
-            return num1 / num2
-        print(div(float(input("Enter First Number: ")), float(input("Enter Second Number: "))))
+        print(arithmetic.div(float(input("Enter First Number: ")), float(input("Enter Second Number: "))))
     case "multiplication":
-        def mul(num1, num2):
-            return num1 * num2
-        print(mul(float(input("Enter First Number: ")), float(input("Enter Second Number: "))))
+        print(arithmetic.mul(float(input("Enter First Number: ")), float(input("Enter Second Number: "))))
     case "multiply":
-        def mul(num1, num2):
-            return num1 * num2
-        print(mul(float(input("Enter First Number: ")), float(input("Enter Second Number: "))))
+        print(arithmetic.mul(float(input("Enter First Number: ")), float(input("Enter Second Number: "))))
     case "times":
-        def mul(num1, num2):
-            return num1 * num2
-        print(mul(float(input("Enter First Number: ")), float(input("Enter Second Number: "))))
+        print(arithmetic.mul(float(input("Enter First Number: ")), float(input("Enter Second Number: "))))
     case "m":
-        def mul(num1, num2):
-            return num1 * num2
-        print(mul(float(input("Enter First Number: ")), float(input("Enter Second Number: "))))
+        print(arithmetic.mul(float(input("Enter First Number: ")), float(input("Enter Second Number: "))))
     case "*":
-        def mul(num1, num2):
-            return num1 * num2
-        print(mul(float(input("Enter First Number: ")), float(input("Enter Second Number: "))))
-# if the user types or do something that can't be done instead of the program crashing it will just print out "Invalid operation! Please try again!" and make the user try again.
+        print(arithmetic.mul(float(input("Enter First Number: ")), float(input("Enter Second Number: "))))
+# Handle invalid operation input by prompting the user to try again
     case _:
         print("Invalid operation! Please try again!")
         is_error = True
@@ -88,94 +56,59 @@ match operation.lower():
             operation = input("Enter operation: ")
             match operation.lower():
                 case "addition":
-                    def add(num1, num2):
-                        return num1 + num2
-                    print(add(float(input("Enter First Number: ")), float(input("Enter Second Number: "))))
+                    print(arithmetic.add(float(input("Enter First Number: ")), float(input("Enter Second Number: "))))
                     is_error = False
                 case "add":
-                    def add(num1, num2):
-                        return num1 + num2
-                    print(add(float(input("Enter First Number: ")), float(input("Enter Second Number: "))))
+                    print(arithmetic.add(float(input("Enter First Number: ")), float(input("Enter Second Number: "))))
                     is_error = False
                 case "plus":
-                    def add(num1, num2):
-                        return num1 + num2
-                    print(add(float(input("Enter First Number: ")), float(input("Enter Second Number: "))))
+                    print(arithmetic.add(float(input("Enter First Number: ")), float(input("Enter Second Number: "))))
                     is_error = False
                 case "a":
-                    def add(num1, num2):
-                        return num1 + num2
-                    print(add(float(input("Enter First Number: ")), float(input("Enter Second Number: "))))
+                    print(arithmetic.add(float(input("Enter First Number: ")), float(input("Enter Second Number: "))))
                     is_error = False
                 case "+":
-                    def add(num1, num2):
-                        return num1 + num2
-                    print(add(float(input("Enter First Number: ")), float(input("Enter Second Number: "))))
+                    print(arithmetic.add(float(input("Enter First Number: ")), float(input("Enter Second Number: "))))
                     is_error = False
                 case "subtraction":
-                    def sub(num1, num2):
-                        return num1 - num2
-                    print(sub(float(input("Enter First Number: ")), float(input("Enter Second Number: "))))
+                    print(arithmetic.sub(float(input("Enter First Number: ")), float(input("Enter Second Number: "))))
                     is_error = False
                 case "minus":
-                    def sub(num1, num2):
-                        return num1 - num2
-                    print(sub(float(input("Enter First Number: ")), float(input("Enter Second Number: "))))
+                    print(arithmetic.sub(float(input("Enter First Number: ")), float(input("Enter Second Number: "))))
                     is_error = False
                 case "s":
-                    def sub(num1, num2):
-                        return num1 - num2
-                    print(sub(float(input("Enter First Number: ")), float(input("Enter Second Number: "))))
+                    print(arithmetic.sub(float(input("Enter First Number: ")), float(input("Enter Second Number: "))))
                     is_error = False
                 case "-":
-                    def sub(num1, num2):
-                        return num1 - num2
-                    print(sub(float(input("Enter First Number: ")), float(input("Enter Second Number: "))))
+                    print(arithmetic.sub(float(input("Enter First Number: ")), float(input("Enter Second Number: "))))
                     is_error = False
                 case "division":
-                    def div(num1, num2):
-                        return num1 / num2
-                    print(div(float(input("Enter First Number: ")), float(input("Enter Second Number: "))))
+                    print(arithmetic.div(float(input("Enter First Number: ")), float(input("Enter Second Number: "))))
                     is_error = False
                 case "divide":
-                    def div(num1, num2):
-                        return num1 / num2
-                    print(div(float(input("Enter First Number: ")), float(input("Enter Second Number: "))))
+                    print(arithmetic.div(float(input("Enter First Number: ")), float(input("Enter Second Number: "))))
                     is_error = False
                 case "d":
-                    def div(num1, num2):
-                        return num1 / num2
-                    print(div(float(input("Enter First Number: ")), float(input("Enter Second Number: "))))
+                    print(arithmetic.div(float(input("Enter First Number: ")), float(input("Enter Second Number: "))))
                     is_error = False
                 case "/":
-                    def div(num1, num2):
-                        return num1 / num2
-                    print(div(float(input("Enter First Number: ")), float(input("Enter Second Number: "))))
+                    print(arithmetic.div(float(input("Enter First Number: ")), float(input("Enter Second Number: "))))
                     is_error = False
                 case "multiplication":
-                    def mul(num1, num2):
-                        return num1 * num2
-                    print(mul(float(input("Enter First Number: ")), float(input("Enter Second Number: "))))
+                    print(arithmetic.mul(float(input("Enter First Number: ")), float(input("Enter Second Number: "))))
                 case "multiply":
-                    def mul(num1, num2):
-                        return num1 * num2
-                    print(mul(float(input("Enter First Number: ")), float(input("Enter Second Number: "))))
+                    print(arithmetic.mul(float(input("Enter First Number: ")), float(input("Enter Second Number: "))))
                     is_error = False
                 case "times":
-                    def mul(num1, num2):
-                        return num1 * num2
-                    print(mul(float(input("Enter First Number: ")), float(input("Enter Second Number: "))))
+                    print(arithmetic.mul(float(input("Enter First Number: ")), float(input("Enter Second Number: "))))
                     is_error = False
                 case "m":
-                    def mul(num1, num2):
-                        return num1 * num2
-                    print(mul(float(input("Enter First Number: ")), float(input("Enter Second Number: "))))
+                    print(arithmetic.mul(float(input("Enter First Number: ")), float(input("Enter Second Number: "))))
                     is_error = False
                 case "*":
-                    def mul(num1, num2):
-                        return num1 * num2
-                    print(mul(float(input("Enter First Number: ")), float(input("Enter Second Number: "))))
+                    print(arithmetic.mul(float(input("Enter First Number: ")), float(input("Enter Second Number: "))))
                     is_error = False
+# If the input is still invalid, continue prompting the user
                 case _:
                     print("Invalid operation! Please try again!")
                     is_error = True
