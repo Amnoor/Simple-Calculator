@@ -13,41 +13,41 @@ operation = input("Enter operation: ")
 # Match the input to the corresponding arithmetic function
 match operation.lower():
     case "addition":
-        print(arithmetic.add(float(input("Enter First Number: ")), float(input("Enter Second Number: "))))
+        arithmetic.add()
     case "add":
-        print(arithmetic.add(float(input("Enter First Number: ")), float(input("Enter Second Number: "))))
+        arithmetic.add()
     case "plus":
-        print(arithmetic.add(float(input("Enter First Number: ")), float(input("Enter Second Number: "))))
+        arithmetic.add()
     case "a":
-        print(arithmetic.add(float(input("Enter First Number: ")), float(input("Enter Second Number: "))))
+        arithmetic.add()
     case "+":
-        print(arithmetic.add(float(input("Enter First Number: ")), float(input("Enter Second Number: "))))
+        arithmetic.add()
     case "subtraction":
-        print(arithmetic.sub(float(input("Enter First Number: ")), float(input("Enter Second Number: "))))
+        arithmetic.sub()
     case "minus":
-        print(arithmetic.sub(float(input("Enter First Number: ")), float(input("Enter Second Number: "))))
+        arithmetic.sub()
     case "s":
-        print(arithmetic.sub(float(input("Enter First Number: ")), float(input("Enter Second Number: "))))
+        arithmetic.sub()
     case "-":
-        print(arithmetic.sub(float(input("Enter First Number: ")), float(input("Enter Second Number: "))))
+        arithmetic.sub()
     case "division":
-        print(arithmetic.div(float(input("Enter First Number: ")), float(input("Enter Second Number: "))))
+        arithmetic.div()
     case "divide":
-        print(arithmetic.div(float(input("Enter First Number: ")), float(input("Enter Second Number: "))))
+        arithmetic.div()
     case "d":
-        print(arithmetic.div(float(input("Enter First Number: ")), float(input("Enter Second Number: "))))
+        arithmetic.div()
     case "/":
-        print(arithmetic.div(float(input("Enter First Number: ")), float(input("Enter Second Number: "))))
+        arithmetic.div()
     case "multiplication":
-        print(arithmetic.mul(float(input("Enter First Number: ")), float(input("Enter Second Number: "))))
+        arithmetic.mul()
     case "multiply":
-        print(arithmetic.mul(float(input("Enter First Number: ")), float(input("Enter Second Number: "))))
+        arithmetic.mul()
     case "times":
-        print(arithmetic.mul(float(input("Enter First Number: ")), float(input("Enter Second Number: "))))
+        arithmetic.mul()
     case "m":
-        print(arithmetic.mul(float(input("Enter First Number: ")), float(input("Enter Second Number: "))))
+        arithmetic.mul()
     case "*":
-        print(arithmetic.mul(float(input("Enter First Number: ")), float(input("Enter Second Number: "))))
+        arithmetic.mul()
 # Handle invalid operation input by prompting the user to try again
     case _:
         print("Invalid operation! Please try again!")
@@ -56,57 +56,57 @@ match operation.lower():
             operation = input("Enter operation: ")
             match operation.lower():
                 case "addition":
-                    print(arithmetic.add(float(input("Enter First Number: ")), float(input("Enter Second Number: "))))
+                    arithmetic.add()
                     is_error = False
                 case "add":
-                    print(arithmetic.add(float(input("Enter First Number: ")), float(input("Enter Second Number: "))))
+                    arithmetic.add()
                     is_error = False
                 case "plus":
-                    print(arithmetic.add(float(input("Enter First Number: ")), float(input("Enter Second Number: "))))
+                    arithmetic.add()
                     is_error = False
                 case "a":
-                    print(arithmetic.add(float(input("Enter First Number: ")), float(input("Enter Second Number: "))))
+                    arithmetic.add()
                     is_error = False
                 case "+":
-                    print(arithmetic.add(float(input("Enter First Number: ")), float(input("Enter Second Number: "))))
+                    arithmetic.add()
                     is_error = False
                 case "subtraction":
-                    print(arithmetic.sub(float(input("Enter First Number: ")), float(input("Enter Second Number: "))))
+                    arithmetic.sub()
                     is_error = False
                 case "minus":
-                    print(arithmetic.sub(float(input("Enter First Number: ")), float(input("Enter Second Number: "))))
+                    arithmetic.sub()
                     is_error = False
                 case "s":
-                    print(arithmetic.sub(float(input("Enter First Number: ")), float(input("Enter Second Number: "))))
+                    arithmetic.sub()
                     is_error = False
                 case "-":
-                    print(arithmetic.sub(float(input("Enter First Number: ")), float(input("Enter Second Number: "))))
+                    arithmetic.sub()
                     is_error = False
                 case "division":
-                    print(arithmetic.div(float(input("Enter First Number: ")), float(input("Enter Second Number: "))))
+                    arithmetic.div()
                     is_error = False
                 case "divide":
-                    print(arithmetic.div(float(input("Enter First Number: ")), float(input("Enter Second Number: "))))
+                    arithmetic.div()
                     is_error = False
                 case "d":
-                    print(arithmetic.div(float(input("Enter First Number: ")), float(input("Enter Second Number: "))))
+                    arithmetic.div()
                     is_error = False
                 case "/":
-                    print(arithmetic.div(float(input("Enter First Number: ")), float(input("Enter Second Number: "))))
+                    arithmetic.div()
                     is_error = False
                 case "multiplication":
-                    print(arithmetic.mul(float(input("Enter First Number: ")), float(input("Enter Second Number: "))))
+                    arithmetic.mul()
                 case "multiply":
-                    print(arithmetic.mul(float(input("Enter First Number: ")), float(input("Enter Second Number: "))))
+                    arithmetic.mul()
                     is_error = False
                 case "times":
-                    print(arithmetic.mul(float(input("Enter First Number: ")), float(input("Enter Second Number: "))))
+                    arithmetic.mul()
                     is_error = False
                 case "m":
-                    print(arithmetic.mul(float(input("Enter First Number: ")), float(input("Enter Second Number: "))))
+                    arithmetic.mul()
                     is_error = False
                 case "*":
-                    print(arithmetic.mul(float(input("Enter First Number: ")), float(input("Enter Second Number: "))))
+                    arithmetic.mul()
                     is_error = False
 # If the input is still invalid, continue prompting the user
                 case _:

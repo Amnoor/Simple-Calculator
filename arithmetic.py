@@ -1,8 +1,32 @@
-def add(num1, num2):
-    return num1 + num2
-def sub(num1, num2):
-    return num1 - num2
-def div(num1, num2):
-    return num1 / num2
-def mul(num1, num2):
-    return num1 * num2
+# arithmetic.py
+# This module contains basic arithmetic functions: addition, subtraction, division, and multiplication.
+# Each function prompts the user for two numbers and prints the result of the operation.
+# Functions do not return values; they directly print the results.
+# The addition function
+def add():
+#   Prompt the user for two numbers
+    num1 = input("Enter first number: ")
+    num2 = input("Enter second number: ")
+#   Print the result of the two numbers
+    print(float(num1) + float(num2))
+# The subtraction function
+def sub():
+#   Prompt the user for two numbers
+    num1 = input("Enter first number: ")
+    num2 = input("Enter second number: ")
+#   Print the result of the two numbers
+    print(float(num1) - float(num2))
+# The division function
+def div():
+#   Prompt the user for two numbers
+    num1 = input("Enter first number: ")
+    num2 = input("Enter second number: ")
+#   Print the result of the two numbers
+    print(float(num1) / float(num2))
+# The multiplication function
+def mul():
+#   Prompt the user for two numbers
+    num1 = input("Enter first number: ")
+    num2 = input("Enter second number: ")
+#   Print the result of the two numbers
+    print(float(num1) * float(num2))
