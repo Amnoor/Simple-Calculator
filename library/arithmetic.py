@@ -39,24 +39,25 @@ def help(*arithmetic):
 #   If specific functions are provided, print detailed help for each
     else:
         for func in arithmetic:
-            if func == "add":
-                print("add(): Prompts for two numbers and prints their sum.")
-            elif func == "add()":
-                print("add(): Prompts for two numbers and prints their sum.")                
-            elif func == "sub":
-                print("sub(): Prompts for two numbers and prints their difference.")
-            elif func == "sub()":
-                print("sub(): Prompts for two numbers and prints their difference.")
-            elif func == "div":
-                print("div(): Prompts for two numbers and prints their quotient.")
-            elif func == "div()":
-                print("div(): Prompts for two numbers and prints their quotient.")
-            elif func == "mul":
-                print("mul(): Prompts for two numbers and prints their product.")
-            elif func == "mul()":
-                print("mul(): Prompts for two numbers and prints their product.")
-            else:
-                print(f"No help available for {func}.")
+            match func:
+                case "add":
+                    print("add(): Prompts for two numbers and prints their sum.")
+                case "add()":
+                    print("add(): Prompts for two numbers and prints their sum.")                
+                case "sub":
+                    print("sub(): Prompts for two numbers and prints their difference.")
+                case "sub()":
+                    print("sub(): Prompts for two numbers and prints their difference.")
+                case "div":
+                    print("div(): Prompts for two numbers and prints their quotient.")
+                case "div()":
+                    print("div(): Prompts for two numbers and prints their quotient.")
+                case "mul":
+                    print("mul(): Prompts for two numbers and prints their product.")
+                case "mul()":
+                    print("mul(): Prompts for two numbers and prints their product.")
+                case _:
+                    print(f"No help available for {func}.")
 if __name__ == "__main__":
     help()
     print(help(input("Enter function name for help: ")))
