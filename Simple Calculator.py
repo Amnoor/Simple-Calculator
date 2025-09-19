@@ -1,7 +1,7 @@
 # Simple Calculator
 # This program performs basic arithmetic operations: addition, subtraction, multiplication, and division.
 # The arithmetic functions are imported from a separate module named 'arithmetic.py'.
-import arithmetic
+import library.arithmetic as arithmetic
 # Display available operations
 print("""What operation would you like?
 +/Addition (A)
